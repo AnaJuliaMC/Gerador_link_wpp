@@ -1,11 +1,14 @@
-const BntLink = document.querySelector("BntLink")
-const BntMens = document.querySelector("BntMensagem")
-const link = document.querySelector("link")
-const mensagem = document.querySelector("mensagem")
+const BntLink = document.getElementById('bntLink');
+const BntMensagem = document.getElementById('bntMensagem');
+const link = document.querySelector("link");
+const mensagem = document.querySelector("mensagem");
 
 BntLink.addEventListener("click", handleBtnLink)
+BntMensagem.addEventListener("click", handleBtnMensagem)
 
-function handleBtnLink(evento){
-    
-
+function handleBtnLink(){
 }
+
+function handleBtnMensagem(){
+}
+
