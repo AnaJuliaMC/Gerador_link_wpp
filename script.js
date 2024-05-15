@@ -1,14 +1,25 @@
 const BntLink = document.getElementById('bntLink');
-const BntMensagem = document.getElementById('bntMensagem');
-const link = document.querySelector("link");
+const BntSend = document.getElementById('bntSend');
+let link = document.getElementById("link");
 const mensagem = document.querySelector("mensagem");
+const numero = document.getElementById("numero")
 
 BntLink.addEventListener("click", handleBtnLink)
-BntMensagem.addEventListener("click", handleBtnMensagem)
+BntSend.addEventListener("click", handleBtnSend)
 
 function handleBtnLink(){
+    var TelLink = 'https://wa.me/55'+numero.value
+    link.innerText = TelLink
+    console.log()
+
+   
+
 }
 
-function handleBtnMensagem(){
-}
+function handleBtnSend(){
+    var TelLink = 'https://wa.me/55'+numero.value
+    var janela = window.open(TelLink, '_blank');
+    janela.focus();
+  }
+
 
