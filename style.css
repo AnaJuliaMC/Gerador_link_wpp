@@ -61,8 +61,8 @@ input {
     width: 50%;
     height: 3rem;
     flex-grow: 1;
-    border-radius: 5%;
-    border-color: grey;
+    border-radius: 5px;
+    border: 1px solid black;
 }
 
 button {
